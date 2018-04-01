@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="navTitle">Ecommerce</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="mycart">My Cart</string>
+    <string name="addtocart">ADD TO CART</string>
+    <string name="buynow">BUY NOW</string>
+    <string name="nointernertconnection">No Internet Connection</string>
+    <string name="pleasecheckinternet">Please check your internet connectivity "\n" and try again.</string>
+    <string name="retry">Retry</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="productdetails">Product  Details</string>
+    <string name="initialVal">1</string>
+    <string name="ok">OK</string>
+    <string name="qty">Quantity =</string>
+    <string name="uname">Username</string>
+    <string name="pass">Password</string>
+    <string name="login">LogIn</string>
+    <string name="titlelogin">Login</string>
+    <string name="newuser">New user? Registrer here</string>
+    <string name="selectqty">Select Quantity</string>
+    <string name="gotocart">GO To CART</string>
+    <string name="name">Name*</string>
+    <string name="mobile">Mobile*</string>
+    <string name="email">Email Id*</string>
+    <string name="address">Address*</string>
+    <string name="password">Password*</string>
+    <string name="conpass">Confirm Password*</string>
+    <string name="register">Register</string>
+    <string name="initaialval">1</string>
+    <string name="btncontinue">Continue</string>
+    <string name="ordertitle">Add a new address</string>
+    <string name="registration">Registration</string>
+    <string name="loginandshopping">Login and continue shopping…</string>
+    <string name="currloc">Use my current location</string>
+    <string name="autofill">Tap to auto fill the address fields</string>
+    <string name="areaorstreet">Area or Street*</string>
+    <string name="flatno">Flat no., Building name*</string>
+    <string name="pincode">Pincode*</string>
+    <string name="state">State*</string>
+    <string name="landmark">Landmark(Optional)</string>
+    <string name="phone">Phone Number*</string>
+    <string name="altphone">Alternate Phone Number (Optional)</string>
+    <string name="addtype">Address Type</string>
+    <string name="home">Home (All day delivery)</string>
+    <string name="work">Work (Delivery between 10am-5pm)</string>
+    <string name="city">City*</string>
+    <string name="placeorder">Place Order</string>
+
+    <string name="enterArea">Please Enter Area</string>
+    <string name="enterPhone">Please Enter Phone</string>
+    <string name="enterPincode">Please Enter Pincode</string>
+    <string name="enterFlatNo">Please Enter FlatNo</string>
+
+</resources>

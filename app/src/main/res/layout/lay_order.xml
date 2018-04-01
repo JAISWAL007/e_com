@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/orderTollbar"
+        android:textStyle="bold"
+        android:titleTextColor="#FFFFFF"
+        android:background="@color/colorToolbar">
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="310sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btnCurrenLocation"
+        android:layout_marginTop="5sp"
+        android:background="#e4e3e3"
+        android:elevation="50sp"
+        android:textColor="#2447fa"
+        android:text="@string/currloc"/>
+
+    <TextView
+        android:layout_marginTop="4sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#979393"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="@string/autofill"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInputCity"
+        android:textColorHint="#b9b8b8"
+        app:errorEnabled="true"
+        android:textSize="17sp"
+        android:hint="@string/city">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:id="@+id/edtCity"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputArea"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/areaorstreet">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtArea"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputFlat"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/flatno">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtFlat"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputPincode"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:layout_weight="5"
+            android:hint="@string/pincode">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtPincode"/>
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtInputState"
+                android:textColorHint="#b9b8b8"
+                app:errorEnabled="true"
+                android:textSize="17sp"
+                android:layout_weight="5"
+                android:hint="@string/state">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:id="@+id/edtState"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputLandmark"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/landmark">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtLandmark"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#cac0c0"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputName"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/name">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtName"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputPhoneNo"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/phone">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtPhone"
+                tools:ignore="TextFields" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputAlternamePhone"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/altphone">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtAlternamePhone"
+                tools:ignore="TextFields" />
+        </android.support.design.widget.TextInputLayout>
+        <!--RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:text="@string/home"
+                android:id="@+id/radioBtnHome"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="@string/work"
+                android:textColor="#000000"
+                android:id="@+id/radionBtnWork"/>
+        </RadioGroup-->
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="1dp"
+            android:background="#2447fa"
+            android:layout_gravity="center"
+            android:text="@string/placeorder"
+            android:id="@+id/btnPlaceOrder"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginTollbar"
+        android:textStyle="bold"
+        android:titleTextColor="#FFFFFF"
+        android:background="@color/colorToolbar">
+    </Toolbar>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:padding="170dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#f8f8f8"
+        android:layout_below="@id/loginTollbar"
+        android:id="@+id/progressBarLogin"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/loginnew"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/loginTollbar" />
+
+    <TextView
+        android:layout_below="@id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="#E64A19"
+        android:text="@string/loginandshopping"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text"
+        android:layout_marginTop="5dp"
+        android:background="#cac0c0"/>
+
+  <android.support.design.widget.TextInputLayout
+      android:layout_marginTop="40dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/txtInputUname"
+      android:textColorHint="#b9b8b8"
+      app:errorEnabled="true"
+      android:layout_below="@id/imageView"
+      android:textSize="17sp"
+      android:hint="@string/uname">
+
+      <EditText
+          android:inputType="text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="#000000"
+          android:textSize="17sp"
+          android:id="@+id/edtUname"/>
+  </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInputUname"
+        android:id="@+id/txtInputPass"
+        android:textColorHint="#b9b8b8"
+        app:errorEnabled="true"
+        android:textSize="17dp"
+        android:hint="@string/pass">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:id="@+id/edtPass"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:background="#2447fa"
+        android:text="@string/login"
+        android:layout_below="@+id/txtInputPass"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNewUser"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/btnLogin"
+        android:gravity="center"
+        android:text="@string/newuser"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+</RelativeLayout>

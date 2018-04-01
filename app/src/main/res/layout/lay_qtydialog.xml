@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectqty"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="10dp"
+    android:background="@color/cardview_dark_background"/>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="28sp"
+            android:src="@drawable/sub"
+            android:layout_weight="0.4"
+            android:id="@+id/btnminus"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="28sp"
+        android:text="@string/initialVal"
+        android:layout_weight="0.3"
+        android:textColor="#000000"
+        android:id="@+id/txtCount"
+        android:gravity="center"
+        />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:src="@drawable/add"
+            android:id="@+id/btnPlus" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOk"
+            android:textSize="15sp"
+            android:background="#b9f25735"
+            android:gravity="center"
+            android:textColor="#050505"
+
+            android:text="@string/ok"/>
+
+    </LinearLayout>
+
+</LinearLayout>

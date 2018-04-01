@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrationTollbar"
+        android:titleTextColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@color/colorToolbar">
+    </Toolbar>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:padding="170dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="#f8f8f8"
+        android:layout_below="@id/registrationTollbar"
+        android:id="@+id/progressBarRegistration"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/registration"
+        android:layout_below="@id/registrationTollbar"
+        android:id="@+id/imageView2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtInputName"
+        android:textColorHint="#b9b8b8"
+        app:errorEnabled="true"
+        android:textSize="17sp"
+        android:hint="@string/name">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:id="@+id/edtName"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputMobile"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:inputType="number"
+            android:hint="@string/mobile">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtMobile"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputEmail"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/email">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtEmail"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputAddress"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/address">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputPass"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/password">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtPass"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtInputConPass"
+            android:textColorHint="#b9b8b8"
+            app:errorEnabled="true"
+            android:textSize="17sp"
+            android:hint="@string/conpass">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:id="@+id/edtConPass"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#2447fa"
+            android:text="@string/register"
+            android:layout_gravity="center"
+            android:id="@+id/btnRegister"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/btnRegister"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
